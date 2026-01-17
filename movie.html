@@ -1,0 +1,110 @@
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Theatre Mayhem</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="movies.js" defer></script>
+    <script src="https://kit.fontawesome.com/d97e17a3b5.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+    <section>
+        <nav>
+            <div class="nav__row">
+                <div class="nav__links">
+                    <a href="#" class="nav__link">About</a>
+                    <a href="#" class="nav__link">See a Movie</a>
+                    <a href="#" class="nav__link">Theatre near you</a>
+                    <a href="#" class="nav__link">Food and Drinks</a>
+                    <div class="search__container">
+                        <input type="text"
+                        placeholder="search a movie..."
+                        id="search__movies"
+                        onkeyup="findMovies()" 
+                        class="search__bar"> 
+                        <button class="search__icon"><i class="fa-solid fa-magnifying-glass"></i></button>
+                        <div class="movie__list" id="movie__list">
+                            <div class="search__list--movie">
+                                <div class="search__movie--poster">
+                                    <img src="">
+                                </div>
+                                <div class="search__movie--info">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="#" class="nav__link login">Login</a>
+                    <a href="#" class="nav__link nav__link--primary">Sign Up</a>
+                </div>
+            </div>
+        </nav>
+    <main>
+        <section id="catalog">
+            <div class="container">
+                <div class="row">
+                    <div class="post__search">
+                        <a href="/index.html">
+                            <button class="btn">Go back</button>
+                        </a>
+                    </div>
+                    <div class="movie__result">
+                        <div class="single__movie--poster">
+                            <img src="" alt="movie poster" class="movie__poster">
+                        </div>
+                        <div class="single__movie--info">
+                            <h3 class="single__movie--title">Godzilla</h3>
+                            <ul class="single__movie__misc--info">
+                                <li class="single__movie--fact">2014</li>
+                                <li class="single__movie--fact">PG-13</li>
+                                <li class="single__movie--fact">May 16, 2014</li>
+                            </ul>
+                            <p class="single__movie--fact">Kaiju Adventure Sci-Fi Thriller Action</p>
+                            <p class = "single__movie--fact"><b>Writer:</b> Dave Callaham, Max Borenstein</p>
+                            <p class = "single__movie--fact"><b>Actors: </b>Aaron Taylor Johnson, Elizabeth Olsen, Bryan Cranston</p>
+                            <p class = "single__movie--fact"><b>Plot:</b> The world is beset by the appearance of monstrous creatures, but one of them may be the only one who can save humanity.</p>
+                            <p class = "single__movie--fact"><b>Language:</b> English</p>
+                            <p class = "single__movie--fact"><b><i class = "fas fa-award"></i></b> Nominated for 1 Oscar</p>
+                        </div>
+                    </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="footer__column">
+                    <div class="footer__column--title"></div>
+                    <a href="" class="footer__column--link"></a>
+                </div>
+                <div class="footer__column">
+                    <div class="footer__column--title"></div>
+                    <a href="" class="footer__column--link"></a>
+                </div>
+                <div class="footer__column">
+                    <div class="footer__column--title"></div>
+                    <a href="" class="footer__column--link"></a>
+                </div>
+            </div>
+            <div class="footer__divider"></div>
+            <div class="footer__social--links">
+                    <a href="" class="footer__social--link">
+                        <i class="fa-brands fa-facebook"></i>
+                    </a>
+                    <a href="" class="footer__social--link">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+                    <a href="" class="footer__social--link">
+                        <i class="fa-brands fa-x-twitter"></i>
+                    </a>
+            </div>
+            <div class="footer__bottom">
+                <div class="footer__column">
+
+                </div>
+                <div class="footer__copyright">&copy 2026 Theatre Mayhem Inc. All Rights Reserved</div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

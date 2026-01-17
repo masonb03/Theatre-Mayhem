@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Theatre Mayhem</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="index.js" defer></script>
+    <script src="https://kit.fontawesome.com/d97e17a3b5.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+    <section>
+        <nav>
+            <div class="nav__row">
+                <div class="nav__links">
+                    <a href="#" class="nav__link">About</a>
+                    <a href="#" class="nav__link">See a Movie</a>
+                    <a href="#" class="nav__link">Theatre near you</a>
+                    <a href="#" class="nav__link">Food and Drinks</a>
+                    <div class="search__container">
+                        <input type="text"
+                        placeholder="search a movie..."
+                        id="search__movies"
+                        onkeyup="findMovies()" 
+                        onclick="findMovies()"
+                        id="search__bar"
+                        class="form__control"> 
+                        <button class="search__icon"><i class="fa-solid fa-magnifying-glass"></i></button>
+                    </div>
+                    <a href="#" class="nav__link login">Login</a>
+                    <a href="#" class="nav__link nav__link--primary">Sign Up</a>
+                </div>
+            </div>
+        </nav>
+        <header id="hero">
+            <div class="container">
+                <div class="row">
+                    <div class="header__wrapper">
+                        <h1 class="header__title">Welcome to where fiction becomes reality</h1>
+                        <p class="header__para">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatem quos, nobis ratione voluptatum molestias nulla tempora, a, voluptas saepe voluptate illo eaque debitis laboriosam incidunt molestiae fuga rem dolorem! Pariatur!</p>
+                    </div>
+                </div>
+            </div>
+        </header>
+    </section>
+
+    <main>
+        <section id="catalog">
+            <div class="container">
+                <div class="row">
+                    <h2 class="section__title">
+                        Popular <span class="red">Movies</span>
+                    </h2>
+                    <div class="movies">        
+                        <div class="movie">
+                            <figure class="movie__poster--wrapper">
+                                <img src="https://m.media-amazon.com/images/M/MV5BNWE5MGI3MDctMmU5Ni00YzI2LWEzMTQtZGIyZDA5MzQzNDBhXkEyXkFqcGc@._V1_SX300.jpg" alt="Movie Poster" class="movie__poster">
+                            </figure>
+                            <h1 class="movie__title">Guardians of The Galaxy</h1>
+                            <div class="movie__info">
+                                <h3 class="movie__runtime">3HR 20 MIN |</h3>
+                                <p class="movie__rating">R</p>
+                                <p class="movie__date">Release: Jan 06, 2017</p>
+                            </div>
+                                <button class="btn">Get Tickets</button> 
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="footer__column">
+                    <div class="footer__column--title"></div>
+                    <a href="" class="footer__column--link"></a>
+                </div>
+                <div class="footer__column">
+                    <div class="footer__column--title"></div>
+                    <a href="" class="footer__column--link"></a>
+                </div>
+                <div class="footer__column">
+                    <div class="footer__column--title"></div>
+                    <a href="" class="footer__column--link"></a>
+                </div>
+            </div>
+            <div class="footer__divider"></div>
+            <div class="footer__social--links">
+                    <a href="" class="footer__social--link">
+                        <i class="fa-brands fa-facebook"></i>
+                    </a>
+                    <a href="" class="footer__social--link">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+                    <a href="" class="footer__social--link">
+                        <i class="fa-brands fa-x-twitter"></i>
+                    </a>
+            </div>
+            <div class="footer__bottom">
+                <div class="footer__column">
+
+                </div>
+                <div class="footer__copyright">&copy 2026 Theatre Mayhem Inc. All Rights Reserved</div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
