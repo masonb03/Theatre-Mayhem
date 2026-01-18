@@ -70,8 +70,9 @@ async function renderMovies(searchTerm) {
 // Function to handle search
 function findMovies() {
     const searchTerm = searchInput.value.trim(); //Searches for any object that has a similar title to what it being searched
-    if (searchTerm) {
-        renderMovies(searchTerm);
+    if (searchTerm && searchTerm.length > 0) {
+        const cleanSearch = searchTerm.toLowerCase();
+        renderMovies(cleanSearch);
     } else {
         //If there is no movies, then displays the initial movies
         loadInitialMovies();
@@ -93,6 +94,7 @@ function showMovie(id) {
 }
 
 function movieHTML(movie) {
+    console.log(movie);
     return `
         <div class="movie">
             <figure class="movie__poster--wrapper" onclick="showMovie('${movie.imdbID}')">
@@ -105,4 +107,13 @@ function movieHTML(movie) {
             <button class="btn" onclick="showMovie('${movie.imdbID}')">Get Tickets</button>
         </div>
     `
+    
+}
+
+function openMenu() {
+    document.body.classList += ' menu--open';
+}
+
+function closeMenu() {
+    document.body.classList.remove('menu--open');
 }
