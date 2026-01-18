@@ -335,21 +335,21 @@ SINGLE MOVIE PAGE
 .movie__result {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
     align-items: center;
-    align-content: center;
+    padding: 48px 0;
 }
 
 
 .single__movie--info {
+    max-width: 600px;
+    padding: 0 24px;
     color: #fff;
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    max-width: 800px;
 }
 
 .single__movie--fact{
-    padding: 12px 0;
+    margin: 12px 0;
+    font-size: 20px;
 }
 
 
@@ -416,6 +416,7 @@ MEDIA
     .nav__links {
         display: none;
     }
+
 }
 
 
